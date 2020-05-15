@@ -34,12 +34,6 @@
             ]
           }]
         },
-        "Maintenance_iRule": {
-          "class": "iRule",
-          "iRule": {
-            "url": "https://raw.githubusercontent.com/kreynoldsf5/ASE-AS3-Exercise/master/maintenance.irule"
-          }
-        }
       }
     }
   }
