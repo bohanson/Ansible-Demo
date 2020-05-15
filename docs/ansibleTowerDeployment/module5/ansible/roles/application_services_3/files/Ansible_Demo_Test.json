@@ -9,7 +9,7 @@
     "id": "8316914",
     "label": "My-Test",
     "remark": "Simple HTTP application referencing an externally hosted iRule",
-    "My Test": {
+    "My-Test": {
       "class": "Tenant",
       "ApplicationA": {
         "class": "Application",
