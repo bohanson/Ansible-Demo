@@ -18,7 +18,7 @@
           "class": "Service_HTTP",
           "iRules": ["Maintenance_iRule"],
           "virtualAddresses": [
-            "10.0.1.170"
+            "10.1.10.170"
           ],
           "pool": "web_pool"
         },
