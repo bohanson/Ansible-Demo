@@ -50,20 +50,38 @@
         "virtualAddresses": [
           "10.1.10.171"
         ],
-        "pool": "web_pool2",
+        "policyEndpoint": "forward_policy",
         "serverTLS": "webtls"
       },
-      "web_pool2": {
-        "class": "Pool",
-        "monitors": [
-            "https"
-        ],
-        "members": [{
-          "servicePort": 8080,
-          "serverAddresses": [
-            "10.1.20.11"
+      "forward_policy": {
+          "class": "Endpoint_Policy",
+          "rules": [
+              {
+                  "name": "forward_to_pool",
+                  "conditions": [
+                      {
+                          "type": "httpUri",
+                          "path": {
+                              "operand": "contains",
+                              "values": [
+                                  "/"
+                              ]
+                          }
+                      }
+                  ],
+                  "actions": [
+                      {
+                          "type": "forward",
+                          "event": "request",
+                          "select": {
+                              "pool": {
+                                  "use": "web_pool"
+                              }
+                          }
+                      }
+                  ]
+              }
           ]
-        }]
       },
       "webtls": {
         "class": "TLS_Server",
