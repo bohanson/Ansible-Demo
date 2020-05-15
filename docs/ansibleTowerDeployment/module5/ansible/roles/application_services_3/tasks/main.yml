@@ -31,7 +31,7 @@
     bigip1_auth_token: "{{ bigip1_auth_response.json.token.token }}"
 
 - name: Prepare the AS3 declaration
-  template: src="{{ role_path }}/files/Ansible_Demo_Test.json" dest="{{ role_path }}/files/{{ serviceName }}_declaration.json"
+  template: src="{{ role_path }}/files/Test.json" dest="{{ role_path }}/files/{{ serviceName }}_declaration.json"
   delegate_to: localhost
 
 - name: Validate {{deviceName1}} AS3 Rest Worker is ready
