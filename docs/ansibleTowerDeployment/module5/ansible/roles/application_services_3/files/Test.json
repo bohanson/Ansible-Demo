@@ -55,7 +55,9 @@
       },
       "web_pool2": {
         "class": "Pool",
-        "loadBalancingMode": "predictive-node",
+        "monitors": [
+            "http"
+        ],
         "members": [{
           "servicePort": 8080,
           "serverAddresses": [
