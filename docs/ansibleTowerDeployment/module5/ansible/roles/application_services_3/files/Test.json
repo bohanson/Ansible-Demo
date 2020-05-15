@@ -41,7 +41,7 @@
           }
         }
       }
-    }
+    },
     "MySecureTest": {
       "class": "Application",
       "template": "https",
