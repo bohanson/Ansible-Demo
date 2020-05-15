@@ -28,9 +28,9 @@
             "http"
           ],
           "members": [{
-            "servicePort": 8080,
+            "servicePort": 8081,
             "serverAddresses": [
-              "10.1.20.12"
+              "10.1.20.11"
             ]
           }]
         },
