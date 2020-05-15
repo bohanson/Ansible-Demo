@@ -50,18 +50,18 @@
         "virtualAddresses": [
           "10.1.10.171"
         ],
-        "pool": "web_pool",
+        "pool": "web_pool2",
         "serverTLS": "webtls"
       },
       "web_pool2": {
         "class": "Pool",
         "monitors": [
-            "http"
+            "https"
         ],
         "members": [{
           "servicePort": 8080,
           "serverAddresses": [
-            "10.1.20.11",
+            "10.1.20.11"
           ]
         }]
       },
