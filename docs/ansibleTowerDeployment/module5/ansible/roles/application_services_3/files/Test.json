@@ -44,7 +44,7 @@
     "A1": {
         "class": "Application",
         "template": "https",
-        "serviceMain": {
+        "serviceMain_https": {
           "class": "Service_HTTPS",
           "virtualAddresses": [
             "10.1.10.171"
