@@ -49,7 +49,7 @@
           "virtualAddresses": [
             "10.1.10.171"
           ],
-          "pool": "web_pool",
+          "pool": "web_pool2",
           "serverTLS": "webtls"
         },
         "web_pool2": {
