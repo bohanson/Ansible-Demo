@@ -21,7 +21,6 @@
           ],
           "snat": "auto",
           "pool": "web_pool2",
-          "serverTLS": "webtls",
           "policyWAF": {
           "use": "My_ASM_Policy"
           }
