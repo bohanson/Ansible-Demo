@@ -31,7 +31,7 @@
     bigip1_auth_token: "{{ bigip1_auth_response.json.token.token }}"
 
 - name: Prepare the AS3 declaration
-  template: src="{{ role_path }}/files/Waf_policy.json" dest="{{ role_path }}/files/{{ serviceName }}_declaration.json"
+  template: src="{{ role_path }}/files/{{FileName}}.json" dest="{{ role_path }}/files/{{ serviceName }}_declaration.json"
   delegate_to: localhost
 
 - name: Validate {{deviceName1}} AS3 Rest Worker is ready
