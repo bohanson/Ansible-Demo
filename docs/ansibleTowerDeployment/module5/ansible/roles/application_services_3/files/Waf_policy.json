@@ -20,6 +20,7 @@
             "10.1.10.171"
           ],
           "snat": "auto",
+          "serverTLS": "webtls",
           "pool": "web_pool2",
           "policyWAF": {
           "use": "My_ASM_Policy"
